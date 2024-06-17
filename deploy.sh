@@ -3,16 +3,6 @@
 # abort on errors
 set -e
 
-# Function to handle errors
-error_exit() {
-    echo "Error occurred in script execution. Exiting."
-    read -p "Press any key to continue..."
-    exit 1
-}
-
-# Trap errors
-trap 'error_exit' ERR
-
 # build
 npm run build
 
@@ -30,6 +20,3 @@ git commit -m 'deploy'
 git push -f git@github.com:Surpyyy/surpmatched.git main:gh-pages
 
 cd -
-
-# Pause at the end of the script
-read -p "Script completed. Press any key to exit..."
