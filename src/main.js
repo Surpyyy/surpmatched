@@ -4,19 +4,15 @@ import router from './router/index.ts'
 import { initializeApp } from 'firebase/app'
 
 const firebaseConfig = {
-    apiKey: process.env.APIKEY,
-
-    authDomain: process.env.AUTHDOMAIN,
-  
-    projectId: process.env.PROJECTID,
-  
-    storageBucket: process.env.STORAGEBUCKET,
-  
-    messagingSenderId: process.env.MESSANGINGSENDERID,
-  
-    appId: process.env.APPID,
-  
+    apiKey: process.env.VUE_APP_APIKEY,
+    authDomain: process.env.VUE_APP_AUTHDOMAIN,
+    projectId: process.env.VUE_APP_PROJECTID,
+    storageBucket: process.env.VUE_APP_STORAGEBUCKET,
+    messagingSenderId: process.env.VUE_APP_MESSAGINGSENDERID,
+    appId: process.env.VUE_APP_APPID,
 }
+
+console.log(firebaseConfig);
 
 initializeApp(firebaseConfig)
 
