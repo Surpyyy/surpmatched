@@ -4,8 +4,7 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         {path: "/", component: () => import("../views/HomePage.vue")},
-        {path: "/register", component: () => import("../views/RegisterPage.vue")},
-        {path: "/login", component: () => import("../views/SignIn.vue")},
+        {path: "/signin", component: () => import("../views/RegisterPage.vue")},
     ]
 })
 
