@@ -23,12 +23,6 @@ onMounted(() => {
 <template>
   <div>
     <h1>Home</h1>
-    <div v-if="user">
-      <p>Name: {{ user.name }}</p>
-      <p>Email: {{ user.email }}</p>
-      <img :src="user.imageUrl" alt="User Image" v-if="user.imageUrl">
-    </div>
-    <p v-else>Not logged in</p>
   </div>
 </template>
 

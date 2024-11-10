@@ -32,7 +32,6 @@
       router.push("/");
     })
     .catch((error) => {
-      alert("Sign-in failed!");
       console.error(error);
     });
 };
