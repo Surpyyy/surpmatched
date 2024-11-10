@@ -12,8 +12,6 @@ const firebaseConfig = {
     appId: process.env.VUE_APP_APPID,
 }
 
-console.log(firebaseConfig);
-
 initializeApp(firebaseConfig)
 
 const app = createApp(App)
